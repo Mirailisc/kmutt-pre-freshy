@@ -3,10 +3,11 @@
 
 int main()
 {
-    int i = 0, count = 0;
+    int count = 0;
     char str[32] = "CPE";
 
-    while(str[count] != '\0') {
+    while (str[count] != '\0')
+    {
         count++;
     }
 
