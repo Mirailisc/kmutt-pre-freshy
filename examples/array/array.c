@@ -2,9 +2,9 @@
 
 int main()
 {
-    int student[3][2], weight, height;
+    int student[10][2], weight, height;
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 10; i++)
     {
 
         int index = i + 1;
@@ -12,14 +12,14 @@ int main()
         printf("Enter student %d's weight :", index);
         scanf("%d", &weight);
 
-        student[i][0] = weight;
         printf("Enter student %d's height :", index);
         scanf("%d", &height);
 
+        student[i][0] = weight;
         student[i][1] = height;
     }
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 10; i++)
     {
 
         for (int j = 0; j < 2; j++)
