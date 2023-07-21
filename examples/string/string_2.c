@@ -7,7 +7,8 @@ int main()
     char str1[32] = "123";
     char str2[32] = "456";
 
-    for (i = 3; i <= 5; i++) {
+    for (i = 3; i <= 5; i++)
+    {
         str1[i] = str2[j];
         j++;
     }
