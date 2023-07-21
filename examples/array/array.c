@@ -2,21 +2,21 @@
 
 int main()
 {
-    int student[10][2], weight, height;
+    int healthData[10][2], weight, height;
 
     for (int i = 0; i < 10; i++)
     {
 
         int index = i + 1;
 
-        printf("Enter student %d's weight :", index);
+        printf("Enter student %d's weight: ", index);
         scanf("%d", &weight);
 
-        printf("Enter student %d's height :", index);
+        printf("Enter student %d's height: ", index);
         scanf("%d", &height);
 
-        student[i][0] = weight;
-        student[i][1] = height;
+        healthData[i][0] = weight;
+        healthData[i][1] = height;
     }
 
     for (int i = 0; i < 10; i++)
@@ -26,11 +26,9 @@ int main()
         {
             int index = i + 1;
 
-            printf("Student no.%d has weight: ", index);
-            printf("%d\n", student[i][0]);
-
-            printf("Student no.%d has height: ", index);
-            printf("%d\n", student[i][1]);
+            printf("Student %d data = ", index);
+            printf("%d kg ", healthData[i][0]);
+            printf("%d cm\n", healthData[i][1]);
         }
     }
 
