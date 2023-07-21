@@ -2,20 +2,30 @@
 
 int main()
 {
-    int number;
+    int score;
 
-    printf("Enter your number: ");
-    scanf("%d", &number);
+    printf("Enter your score: ");
+    scanf("%d", &score);
 
-    if (number % 2)
+    if (score >= 80)
     {
-        printf("%d", number);
-        printf(" is Odd");
+        printf("%d", score);
+        printf(" : A");
+    }
+    else if (score >= 60)
+    {
+        printf("%d", score);
+        printf(" : B");
+    }
+    else if (score >= 40)
+    {
+        printf("%d", score);
+        printf(" : C");
     }
     else
     {
-        printf("%d", number);
-        printf(" is Even");
+        printf("%d", score);
+        printf(" : Fail");
     }
 
     return 0;
